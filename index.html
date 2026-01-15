@@ -4,56 +4,74 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>민규 & 예리나 결혼합니다</title>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@300;400;700&display=swap" rel="stylesheet">
     <style>
         body {
             margin: 0;
-            padding: 0;
+            padding: 20px 0; /* 상하 여백 추가 */
             font-family: 'Noto Serif KR', serif;
             color: #333;
             line-height: 1.8;
-            background-color: #fff;
             text-align: center;
+            
+            /* ▼ 배경 이미지 설정 부분 ▼ */
+            /* GitHub에 올린 이미지 파일명과 정확히 일치해야 합니다. */
+            background-image: url('freesia_bg.jpg'); 
+            background-size: cover;       /* 화면 꽉 차게 */
+            background-position: center top; /* 중앙 상단 기준 */
+            background-repeat: no-repeat; /* 반복 없음 */
+            background-attachment: fixed; /* 스크롤 시 배경 고정 (모바일에서 고급스러움) */
+            background-color: #d0f0f8;    /* 이미지 로딩 전 보여줄 비슷한 배경색 */
         }
-        .container { padding: 60px 20px; max-width: 500px; margin: 0 auto; }
+
+        .container { 
+            /* ▼ 가독성을 위한 반투명 흰색 배경 박스 설정 ▼ */
+            background-color: rgba(255, 255, 255, 0.88); /* 0.88은 투명도 (0~1) */
+            max-width: 450px;             /* 너비를 조금 줄여서 배경이 더 잘 보이게 */
+            margin: 20px auto;            /* 상하 마진 추가 */
+            padding: 60px 30px;          /* 내부 여백 조정 */
+            border-radius: 12px;          /* 모서리 둥글게 */
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1); /* 부드러운 그림자 효과 */
+        }
         
         /* 메인 섹션 */
-        .flower { width: 40px; margin-bottom: 20px; }
-        .main-title { font-size: 1.2rem; letter-spacing: 2px; margin-bottom: 40px; color: #555; }
+        .main-title { font-size: 1.2rem; letter-spacing: 2px; margin-bottom: 40px; color: #555; line-height: 1.4; }
         .names { font-size: 1.8rem; font-weight: 400; margin: 30px 0; letter-spacing: 3px; }
-        .date-top { font-size: 1rem; color: #666; margin-bottom: 60px; }
-
+        
         /* 인사말 */
-        .greeting-title { font-size: 1.1rem; color: #889c31; margin-bottom: 30px; }
+        .greeting-title { font-size: 1.1rem; color: #889c31; margin-bottom: 30px; font-weight: 700; }
         .greeting-text { font-size: 0.95rem; color: #444; margin-bottom: 60px; word-break: keep-all; }
 
         /* 혼주 정보 */
-        .family { font-size: 0.95rem; margin-bottom: 80px; }
-        .family p { margin: 10px 0; }
-        .point-color { color: #4a8d8d; font-weight: bold; }
+        .family { font-size: 1rem; margin-bottom: 60px; }
+        .family p { margin: 12px 0; }
+        .point-color { color: #4a8d8d; font-weight: 700; font-size: 1.1rem;}
+        .semi-color { font-size: 0.75rem; color: #777; font-weight: 300; }
 
         /* 날짜 섹션 */
         .date-section { border-top: 1px solid #eee; padding-top: 40px; margin-top: 40px; }
         .date-label { font-size: 0.8rem; letter-spacing: 4px; color: #4a8d8d; margin-bottom: 10px; }
-        .final-date { font-size: 1.1rem; color: #333; }
+        .final-date { font-size: 1.1rem; color: #333; font-weight: 700; }
         
-        footer { font-size: 0.8rem; color: #aaa; margin-top: 100px; padding-bottom: 40px; }
+        footer { font-size: 0.7rem; color: #888; margin-top: 80px; padding-bottom: 20px; letter-spacing: 1px;}
     </style>
 </head>
 <body>
 
 <div class="container">
-    <div class="main-title">THE WEDDING OF</div>
+    <div class="main-title">THE <br> WEDDING <br>
+    <span class="semi-color" style="font-size: 0.9rem; letter-spacing: 1px;">OF</span></div>
     <div class="names">JANG MINGYU <br> & <br> LEE YERINA</div>
-    <div class="date-top">2026. 03. 22. SUN 12:00 PM</div>
+
+    <hr style="border: none; border-top: 1px solid #eee; margin: 40px 20px; opacity: 0.5;" />
 
     <div class="greeting-section">
         <div class="greeting-title">2026년 3월, 프리지아 필 무렵</div>
         <p class="greeting-text">
             저희 두 사람, 영원한 사랑을 약속합니다.<br><br>
             소중한 분들을 모시고 인사드리는 것이 도리이지만,<br>
-            저희의 뜻을 담아 양가의 허락으로<br>
-            <strong>예식은 생략하려 합니다.</strong><br><br>
+            저희의 뜻을 담아 양가의 허락으로
+            예식은 생략하려 합니다.<br><br>
             멀리서나마 축하의 마음을 보내주시면<br>
             평생의 기쁨으로 간직하고<br>
             서로 아끼고 보듬으며 잘 살겠습니다.<br><br>
@@ -63,10 +81,10 @@
     </div>
 
     <div class="family">
-        <p>장경진 · 윤미라의 차남 <span class="point-color">민규</span></p>
-        <p>이정우 · 김용미의 장녀 <span class="point-color">예리나</span></p>
+        <p><strong>장경진 · 윤미라</strong><span class="semi-color"> 의 차남</span> <span class="point-color"> 민 규</span></p>
+        <p><strong>이정우 · 김용미</strong><span class="semi-color"> 의 장녀</span> <span class="point-color"> 예 리 나</span></p>
     </div>
-
+    
     <div class="date-section">
         <div class="date-label">DATE</div>
         <div class="final-date">2026년 3월 22일 일요일 낮 12시</div>
